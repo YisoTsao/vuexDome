@@ -5,7 +5,10 @@ Vue.use(Vuex)
 
 const countModule = {
     namespaced: true,
-    state: { count: 0 },
+    state: { 
+      count: 0,
+      title: 'I am moduleA' 
+    },
     mutations: {
       increment(state, payload) {
         state.count++
@@ -20,6 +23,9 @@ const countModule = {
     getters: { // 當讀取屬性值時自動呼叫並返回屬性值
       evenOrOdd(state) {
         return state.count % 2 === 0 ? "偶數" : "奇數";
+      },
+      evenOrOddreal(state) {
+        return state.count % 2 === 0 ? "real偶數" : "real奇數";
       }
     },
     actions: {
