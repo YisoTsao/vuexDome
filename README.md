@@ -1,5 +1,6 @@
 # vuex-demo
 
+![image](https://github.com/YisoTsao/vuexDome/blob/master/vuexdemo.gif?raw=true)
 ## Project setup
 ```
 npm install
